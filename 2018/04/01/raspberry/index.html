@@ -96,7 +96,7 @@
                             
                         </div>
                         <h1>Raspberry Control</h1>
-                        <h2 class="subheading">这是一个树莓派的小玩法.</h2>
+                        <h2 class="subheading">这是一个树莓派的新玩法.</h2>
                         <span class="meta">
                             Posted by P X on
                             2018-04-01
@@ -218,7 +218,8 @@
 
                 <blockquote>
 <p>树莓派作为一个高性价比的微型电脑，我们可以使用它来做很多有趣的事</p>
-<p>这里使用Pi的GPIO口，摄像头来实现一些嵌入式的控制，同时将其接入网络，可在远程进行操控</p>
+<p>这里使用Pi的GPIO口，摄像头来实现一些嵌入式的控制，同时将其接入网络，可在远程进行操控<br>
+在这里使用的是Python，加上flask，picamera，GPIO库。</p>
 </blockquote>
 <h1><span id="live-demo"></span></h1>
 <hr>
@@ -229,22 +230,19 @@
 2.LED两个<br>
 3.树莓派官方摄像头<br>
 4.鼠标键盘<br>
-（其他屏幕等自备，远程连接的可自行搜索连接方法）<br>
-Let’s begin!!!</p>
+（其他屏幕等自备，远程连接的可自行搜索连接方法）</p>
 <h2><span id="外观">外观</span></h2>
 <hr>
-<p>使用UG设计一个外壳，这个外壳觉着还不错。（自己觉着还满意）<br>
-![树莓派外壳-底座](/img/raspberry control/2.jpg)<br>
-![树莓派外壳-安装](/img/raspberry control/1.jpg)<br>
-![树莓派外壳-整体](/img/raspberry control/3.jpg)</p>
-<h2><span id="modify">Modify</span></h2>
+<p>使用UG设计一个外壳，这个外壳觉着还不错。（自己觉着还满意）</p>
+<p><img src="/img/raspberry/3.jpg" alt="树莓派外壳-整体"></p>
+<h2><span id="换源更新软件">换源，更新软件</span></h2>
 <hr>
 <p>Modify <code>_config.yml</code> file with your own info.<br>
 Especially the section:</p>
-<h3><span id="deployment">Deployment</span></h3>
+<h3><span id="换科大源">换科大源</span></h3>
 <p>Replace to your own repo!</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/&lt;yourAccount&gt;/&lt;repo&gt;</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">&lt;your-branch&gt;</span></span><br></pre></td></tr></table></figure>
-<h3><span id="sidebar-settings">Sidebar settings</span></h3>
+<h3><span id="更新软件">更新软件</span></h3>
 <p>Copy your avatar image to <code>&lt;root&gt;/img/</code> and modify the <code>_config.yml</code>:</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sidebar:</span> <span class="literal">true</span>    <span class="comment"># whether or not using Sidebar.</span></span><br><span class="line"><span class="attr">sidebar-about-description:</span> <span class="string">"&lt;your description&gt;"</span></span><br><span class="line"><span class="attr">sidebar-avatar:</span> <span class="string">img/&lt;your</span> <span class="string">avatar</span> <span class="string">path&gt;</span></span><br></pre></td></tr></table></figure>
 <p>and activate your personal widget you like</p>
@@ -316,7 +314,7 @@ Peace!</p>
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">准备</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">外观</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">Modify</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">Deployment</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">Sidebar settings</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">Signature Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.4.</span> <span class="toc-nav-text">Go to top icon Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.5.</span> <span class="toc-nav-text">Post tag</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.6.</span> <span class="toc-nav-text">Markdown render</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">Hexo Basics</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Have fun ^_^</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">准备</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">外观</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">换源，更新软件</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">换科大源</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">更新软件</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">Signature Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.4.</span> <span class="toc-nav-text">Go to top icon Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.5.</span> <span class="toc-nav-text">Post tag</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.2.6.</span> <span class="toc-nav-text">Markdown render</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">Hexo Basics</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#undefined"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Have fun ^_^</span></a></li></ol>
         
         </div>
       </aside>
